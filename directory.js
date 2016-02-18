@@ -1,7 +1,9 @@
 angular.module('directoryApp', [])
 	.controller('directoryController', function() {
 		var dirList = this;
-		
+
+		dirList.toggle = false;
+
 		dirList.list = [
 		{name: 'Marina', age: 24},
 		{name: 'Stive', age: 16},
