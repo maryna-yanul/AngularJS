@@ -6,7 +6,7 @@ angular.module('directoryApp', [])
 
 		dirList.list = [
 		{name: 'Marina', age: 24},
-		{name: 'Stive', age: 16},
+		{name: 'Steve', age: 16},
 		{name: 'Lo', age: 14},
 		{name: 'Sonya', age: 23}
 		];
