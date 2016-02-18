@@ -8,7 +8,9 @@
 <body ng-controller="directoryController as dirList">
 	<input type="text" ng-model="search">
 	<ul>
-		<li ng-repeat="item in dirList.list | filter:search">{{item.name}} - <em>{{item.age}}</em></li>
+		<li ng-repeat="item in dirList.list | filter:search | orderBy:'age' | limitTo:3 " class="person-{{item.name | lowercase}}">
+			{{item.name}} - <em>{{item.age | currency:"*":0}}</em>
+		</li>
 	</ul>
 	<form ng-submit="dirList.addPerson()">
 		<input type="text" placeholder="Name" ng-model="dirList.name">
