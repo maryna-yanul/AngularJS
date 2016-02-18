@@ -10,5 +10,10 @@
 	<ul>
 		<li ng-repeat="item in list | filter:search">{{item.name}} - <em>{{item.age}}</em></li>
 	</ul>
+	<form ng-submit="addPerson()">
+		<input type="text" placeholder="Name" ng-model="name">
+		<input type="number" placeholder="Age" ng-model="age">
+		<input type="submit" value="Submit">
+	</form>
  </body>
 </html>
