@@ -1,1 +1,1 @@
-from flask import Flask, render_templateapp = Flask(__name__)@app.route('/')def index():    return render_template('index.html')@app.route('/person')def person():    return render_template('person.html')if __name__ == '__main__':    app.run(host='marynka.com', port=8080)
+from flask import Flask, render_templateapp = Flask(__name__)@app.route('/')def index():    return render_template('index.html')@app.route('/person')def person():    return render_template('person.html')if __name__ == '__main__':    app.run(host='marynka.com', port=8080)
