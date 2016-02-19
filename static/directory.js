@@ -1,4 +1,4 @@
-angular.module('directoryApp', [])
+angular.module('directoryApp', ['ngAnimate'])
 	.controller('directoryController', function() {
 		var dirList = this;
 
@@ -15,5 +15,5 @@ angular.module('directoryApp', [])
 			dirList.list.push({name:dirList.name, age:dirList.age});
 			dirList.name = '';
 			dirList.age = 0;
-		};	
+		};
 	});
